@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Login System</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-card dashboard-card">
+
+            <h1>Welcome!</h1>
+
+            <p class="subtitle">
+                You have successfully logged in.
+            </p>
+
+            <div class="user-info">
+
+                <h3>Your Account Details</h3>
+
+                <p>
+                    <strong>Name:</strong>
+                    <%= user.name %>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <%= user.email %>
+                </p>
+
+            </div>
+
+            <form action="/logout" method="POST">
+
+                <button type="submit" class="auth-btn logout-btn">
+                    Logout
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
